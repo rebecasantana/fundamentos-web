@@ -56,9 +56,8 @@ a {
   }
   
   :root {
-    --background: #f4f1de;
-    --red :#e07a5f;
-    --blue:#3d405b;
+    --background: #f7f1e3;
+    --purple :#706fd3;
     --dark:#000000;
 
   }
@@ -72,7 +71,7 @@ a {
     display: flex;
     list-style: none;
     gap: 2rem;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     color: var(--blue);
     justify-content: flex-end;
     margin-right: 2rem;
@@ -81,7 +80,7 @@ a {
   }
   
   nav ul li a:hover {
-    color: var(--red);
+    color: var(--purple);
     transition: color 0.3s;
   }
   
@@ -93,20 +92,15 @@ a {
   h1,
   h2 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.0rem;
     color: var(--blue);
 
   }
   
-  h2 {
-    font-size: 2.5rem;
-  }
-  
-  
   .banner {
     display: flex;
     align-items: center;
-    background-color: var(--red);
+    background-color: var(--purple);
     border-radius: 12px;
     padding: 1.5rem;
   }
@@ -134,17 +128,26 @@ a {
   .video iframe {
     width: 100%;
     aspect-ratio: 16/9;
-    border-radius: 16px;
+    border-radius: 18px;
+
   }
 
-  .footer {
-    text-align: center;
-    border-top: 2px solid var(--red);
-    margin-top: 2rem;
-    padding: 2rem 0;
-  }
-  
- 
+.footer {
+  background-color: var(--purple);
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  color:var(--background);
+}
+
+.botao {
+  margin-top: 10px;
+}
+
+.botao a {
+  display: inline-block;
+}
+
   /* ! pagina contato */
   
   .mainFlex {
@@ -172,15 +175,15 @@ a {
     width: 100%;
     padding: 4px 8px;
     border-radius: 8px;
-    border: 1px solid var(--red);
-    background-color: #f4f1de;;
+    border: 1px solid var(--purple);
+    background-color: #f4f1de;
     color: var(--dark);
   }
-  button:hover {
-    background-color: var(--red);
-    cursor: pointer;
-  }
   
+  button:hover {
+  background-color: var(--purple);
+  cursor: pointer;
+}
   .right {
     width: 100%;
     display: flex;

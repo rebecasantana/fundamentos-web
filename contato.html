@@ -21,23 +21,17 @@
     <main class="mainFlex">
       <div class="left">
         <form>
-          <label for="nome">Nome:</label> <br />
-          <input type="text" id="nome" />
-          <br />
-          <br />
-          <label for="email">E-mail:</label> <br />
-          <input type="email" id="email" />
-          <br />
-          <br />
-          <label for="email">Assunto:</label> <br />
-          <input type="assunto" id="assunto" />
-          <br />
-          <br />
-          <label for="assunto">Mensagem:</label> <br />
-          <textarea name="Mensagem" id="Mensagem" rows="5"></textarea>
-          <br />
-          <br />
-          <button>Enviar</button>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" onkeyup='validaNome()' />
+          <div id='txtNome'></div>
+          <label for="email">email:</label>
+          <input type="email" id="email" onkeyup='validaEmail()' />
+          <div id='txtEmail'></div>
+          <label for="assunto">Assunto:</label>
+          <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
+          <div id='txtAssunto'>
+          </div>
+          <button onclick="enviar()">Enviar</button>
         </form>
       </div>
 
@@ -47,12 +41,17 @@
           <p>Parque dos Pinheiros, Hortolândia - SP</p>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.1053081725654!2d-47.206548425385755!3d-22.872567936647673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b98652658725%3A0xde9d65b693213e92!2sSala%20Jacarand%C3%A1%20-%20Aluguel%20de%20Salas%20por%20Hora%2C%20Coworking%2C%20Est%C3%BAdio%20e%20Endere%C3%A7o%20Comercial!5e0!3m2!1spt-BR!2sbr!4v1680628812041!5m2!1spt-BR!2sbr "
-        width="450 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+        width="400 " height="250 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade " onmousemove="mapaZoom()" onmouseout="mapaNormal()"id='mapa'></iframe>
       </div>
     </main>
-    <footer>
-      <p> 💖 Desenvolvido por Rebeca Silva - 2023</p>
-    </footer>
-  </body>
+    <footer class="footer">
+      <p>💖 Desenvolvido por Rebeca Silva - 2023</p>
+      <div class="botao">
+          <a href="https://www.linkedin.com/in/rebecasantana/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" target="_blank"></a>
+      </div>
+  </footer>
+    
+    <script src="assets/js/script.js"></script>
+    </body>
 </html>
     
